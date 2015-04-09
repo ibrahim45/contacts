@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><h1>Update Contact</h1>
+</head>
+<body>
+<form action="" method="get">
+ {% csrf_token %}
+   {{form.as_p}}
+    {% for c     in f %}
+       <I><u> <a href="update/{{c.id}}"><font color="red">{{c.name}}</font></a></u></I><br><br>
+   {%endfor%}
+
+</form>
+</body>
+</html>

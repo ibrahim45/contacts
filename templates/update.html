@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><h1> update Contact </h1>
+</head>
+<body>
+<form action="" method="post">
+Name:<input type="text" name="name" value={{d.name}}>
+Number:<input type="text" name="number"value={{d.number}}>
+{%csrf_token%}
+
+
+<input type="submit" value="update">
+</form>
+</body>
+</html>

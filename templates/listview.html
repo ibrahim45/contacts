@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><font size="6"><center>Delete Contact</center></font>
+</head>
+<body>
+<form action="" method="get">
+
+ {% csrf_token %}
+    
+ {% for d     in f %}   
+
+<I><u> <a href="delete/{{d.id}}"><font color="red"> {{d.name}}</font></a></u></I><br><br>
+ 
+ 
+  {% endfor %}
+    </form>
+    </body>
+ </html> 
+    

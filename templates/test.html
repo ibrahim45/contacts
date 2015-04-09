@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><center><font size="6">All Contacts</font></center>
+<style>
+div{
+    float: right; 
+}
+</style>
+</head>
+<body>
+{% csrf_token %}
+<div><font size="6">
+<a href="create_contact">create</a><br>
+<a href="view_all"> view all </a><br>
+<a href="all_u">update </a><br>
+<a href="all_c"> delete</a><br>
+<a href="del_all">delete all </a></font>	<br></div>
+{% for d     in f %}   
+<I> <font color="black"> {{d.name}}--{{d.number}}</font></I><br><br> 
+{% endfor %}  
+ </body>   
+ </html> 
+    

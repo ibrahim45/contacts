@@ -1,0 +1,14 @@
+ <!DOCTYPE html>
+<html>
+<head><h1> Confirm Delete</h1>
+</head>
+<body>
+<form action="" method="post">
+{%csrf_token%}
+   
+  Are U sure want to delete <u><font color="red">{{ d }}</font></u>?<br><br><br>
+<input type="submit" value="delete">
+</form>
+</body>
+</html>
+ 
